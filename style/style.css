@@ -61,6 +61,11 @@ main h5 {
 
 }
 
+.Stock {
+    display: block;
+    color: red;
+    font-weight 600;
+}
 
 footer {
     width: 100%;
