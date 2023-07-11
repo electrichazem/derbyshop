@@ -1,0 +1,79 @@
+
+
+body {
+    background-color: white;
+}
+
+h2 {
+    direction: rtl;
+    padding-top: 100px;
+    color: #242533!important;
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    gap:  20px;
+    padding: 0px 40px
+}
+
+main .options {
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option {
+    min-width: 200px;
+    border: 1px solid #E9A401;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 40px;
+    position: relative;
+}
+
+.option::after {
+    content: "Via ID";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    background-color: #242533;
+    color: white;
+    text-align: center;
+}
+
+.option img {
+    width: 70px;
+    margin-top: 10px;
+}
+
+.option .q {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #242533;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.option .price {
+    position: absolute;
+    bottom: 0;
+    background-color: #E9A401;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.option .price .offer {
+    color: red;
+    text-decoration: line-through;
+}

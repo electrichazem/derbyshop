@@ -1,105 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Derby Shop</title>
-</head>
-<body>
-    <header>
-        <h1>Derby Shop</h1>
-    </header>
 
-    <main>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 14 Diamonds</span>
-                <br>
-                <span class="price">9 EGP</span>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMK</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+</head>
+
+<body id="top">
+
+
+  <header class="header">
+
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">Derby Shop</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link skewBg" data-nav-link>الرئيسية</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#products" class="navbar-link skewBg" data-nav-link>الخدمات</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link skewBg" data-nav-link>المقالات</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-link skewBg" data-nav-link>التواصل</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" class="menu"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+          </button>
+
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 155 Diamonds</span>
-                <br>
-                <span class="price">65 EGP</span> 
-            </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <main>
+    <article>
+
+      <section class="section hero" id="home" aria-label="home"
+        style="background-image: url('./assets/images/bg 4.png');background-color: rgba(255, 255, 255, 1)!important; ">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Derby Shop</p>
+
+            <h1 class="h1 hero-title">
+              Best <span class="span">Value</span> Best Price
+            </h1>
+
+            <p class="hero-text"></p>
+
+            <button class="btn skewBg" id="products-bt">Our Products</button>
+
+          </div>
+
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 311 Diamonds</span>
-                <br>
-                <span class="price">120 EGP</span> 
-            </div>
+      </section>
+
+      <!-- 
+        - #FEATURED GAME
+      -->
+
+      <section class="section featured-game white" id="products" aria-label="featured game">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+           Mobile <span class="span">Legends</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item" onclick="window.location.href='/via-account'">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./assets/images/id.png" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+
+                <div class="card-content-overlay">
+
+                  <img src="./assets/images/diamond.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">MLBB</span>
+                  </span>
+
+                </div>
+                
+              </div>
+              <span class="name">Via Account</span>
+            </li>
+            <li class="scrollbar-item" onclick="window.location.href='/via-id'">
+              <div class="featured-game-card" onclick="window.location.href='/via-id'">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./assets/images/account.jpg" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+
+                <div class="card-content-overlay">
+
+                  <img src="./assets/images/diamond.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">MLBB</span>
+                  </span>
+
+                </div>
+              </div>
+              <span class="name">Via ID</span> 
+            </li>
+          </ul>
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 466 Diamonds</span>
-                <br>
-                <span class="price">185 EGP</span> 
-            </div>
+      </section>
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Latest News & <span class="span">Articles</span>
+          </h2>
+
+          <p class="section-text"></p>
+
+          <ul class="blog-list">
+
+
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
+                  <img src="./assets/images/aticle.png" width="400" height="290" loading="lazy"
+                    alt="Article Image" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <a href="#" class="item-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time datetime="2022-09-19" class="item-text">September 19, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3>
+                    <a href="#" class="card-title">New Event</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt autem natus, voluptas voluptatibus enim laborum sunt repellat accusantium quaerat excepturi. Sapiente voluptas architecto, ad totam id neque ex delectus.
+                  </p>
+
+                  <!-- <a href="#" class="card-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="caret-forward"></ion-icon>
+                  </a> -->
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 949 Diamonds</span>
-                <br>
-                <span class="price">365 EGP</span> 
-            </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Derby Shop</a>
+
+          <ul class="contact-list">
+
+
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">Phone : +201554667929</a>
+            </li>
+
+
+          </ul>
+
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 1617 Diamonds</span>
-                <br>
-                <span class="price">610 EGP</span> 
-            </div>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Contact Us</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="https://t.me/+wdOk4a6rtIYzYjNk" class="social-link" style="background-color: #35ACE8">
+                  <img src="./assets/images/telegram.png" alt="" width="15">
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/+201554667929" class="social-link" style="background-color: #4BC959">
+                  <img src="./assets/images/whatsapp.png" alt="" width="15">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
         </div>
-        <div class="con">
-            <div class="icon">
-                <img src="./assets/diamond.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends 1898 Diamonds</span>
-                <br>
-                <span class="price">715 EGP</span> 
-            </div>
-        </div>
-         <div class="con">
-            <div class="icon">
-                <img src="./assets/Weekly Diamond Pass.png" alt="">
-            </div>
-            <div class="description">
-                <span class="title">Mobile Legends Weekly Diamond Pass</span>
-                <br>
-                <span class="price">65 EGP</span> 
-            </div>
-        </div>
-        <h5>And more...</h5>
-    </main>
-    <footer>
-        <a href="https://wa.me/+201554667929">
-            <img src="./assets/whatsapp.png" alt="">
-        </a>
-        01554667929
-    </footer>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Derby Shop. All Right Reserved by <a href="" class="copyright-link">Derby Shop</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
