@@ -923,7 +923,9 @@ body {
 .blog-card .card-link:is(:hover, :focus) { color: var(--marigold); }
 
 
-
+#blog > div > ul > li > div > div {
+  direction: rtl;
+}
 
 
 /*-----------------------------------*\
